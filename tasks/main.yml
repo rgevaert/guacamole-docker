@@ -45,4 +45,11 @@
       MYSQL_DATABASE: "{{ mysql_database }}"
       MYSQL_USER: "{{ mysql_user }}"
       MYSQL_PASSWORD: "{{ mysql_password }}"
+      OPENID_AUTHORIZATION_ENDPOINT: "{{ openid_authorization_endpoint }}"
+      OPENID_JWKS_ENDPOINT: "{{ openid_jwks_endpoint }}"
+      OPENID_ISSUER: "{{ openid_issuer }}"
+      OPENID_CLIENT_ID: "{{ openid_client_id }}"
+      OPENID_REDIRECT_URI: "{{ openid_redirect_uri }}"
+      OPENID_USERNAME_CLAIM_TYPE: "{{ openid_username_claim_type }}"
+      OPENID_MAX_TOKEN_VALIDITY: "{{ openid_max_token_validity }}"
     restart_policy: unless-stopped
