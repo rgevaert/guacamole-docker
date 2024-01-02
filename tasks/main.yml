@@ -23,14 +23,14 @@
 - name: guacd container
   docker_container:
     name: some-guacd
-    image: guacamole/guacd
+    image: "guacamole/guacd:{{ guacamole_version }}"
     state: started
     restart_policy: unless-stopped
 
 - name: guacamole container
   docker_container:
     name: guacamole
-    image: guacamole/guacamole
+    image: "guacamole/guacamole:{{ guacamole_version }}"
     state: started
     ports: "127.0.0.1:8080:8080"
     links:
