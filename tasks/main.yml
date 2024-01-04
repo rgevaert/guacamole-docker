@@ -52,4 +52,5 @@
       OPENID_REDIRECT_URI: "{{ openid_redirect_uri }}"
       OPENID_USERNAME_CLAIM_TYPE: "{{ openid_username_claim_type }}"
       OPENID_MAX_TOKEN_VALIDITY: "{{ openid_max_token_validity }}"
+      EXTENSION_PRIORITY: "{{ extension_priority }}"
     restart_policy: unless-stopped
